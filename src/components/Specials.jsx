@@ -8,6 +8,10 @@ const Specials = () => {
     navigate('/menu');
   };
 
+  const handleOrder = () => {
+    navigate('/order');
+  };
+
   const specialItems = [
     {
       title: "Greek Salad",
@@ -49,7 +53,7 @@ const Specials = () => {
                 <span className="price">{item.price}</span>
               </div>
               <p>{item.description}</p>
-              <button className="order-button">Order Delivery →</button>
+              <button className="order-button" onClick={handleOrder}>Order Delivery →</button>
             </div>
           </div>
         ))}
