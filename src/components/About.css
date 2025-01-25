@@ -1,0 +1,95 @@
+.about {
+    padding: 6rem 5%;
+    background: #fff;
+  }
+
+  .about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .about-text h2 {
+    font-size: 2.5rem;
+    color: #495e57;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-text h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+
+  .description-columns {
+    columns: 2;
+    gap: 3rem;
+  }
+
+  .description-columns p {
+    margin: 0 0 1.5rem 0;
+    line-height: 1.6;
+    break-inside: avoid;
+  }
+
+  .about-images {
+    position: relative;
+    min-height: 400px;
+  }
+
+  .image-stack {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .image-bottom {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    bottom: 0;
+    left: 0;
+    background: #495e57;
+    border-radius: 16px;
+    z-index: 1;
+  }
+
+  .image-top {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 0;
+    right: 0;
+    background: #f4ce14;
+    border-radius: 16px;
+    z-index: 2;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media (max-width: 768px) {
+    .about-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .description-columns {
+      columns: 1;
+    }
+
+    .about-images {
+      min-height: 300px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .about {
+      padding: 4rem 5%;
+    }
+
+    .about-text h2 {
+      font-size: 2rem;
+    }
+  }

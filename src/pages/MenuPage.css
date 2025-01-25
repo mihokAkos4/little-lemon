@@ -1,0 +1,67 @@
+.menu-page {
+    padding: 4rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .menu-page h1 {
+    text-align: center;
+    color: #495e57;
+    margin-bottom: 2rem;
+  }
+
+  .menu-section {
+    margin-bottom: 3rem;
+  }
+
+  .menu-section h2 {
+    color: #f4ce14;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #495e57;
+    padding-bottom: 0.5rem;
+  }
+
+  .menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .menu-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .item-header h3 {
+    color: #495e57;
+    margin: 0;
+  }
+
+  .price {
+    color: #f4ce14;
+    font-weight: bold;
+  }
+
+  .description {
+    color: #666;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .menu-page {
+      padding: 2rem;
+    }
+
+    .menu-items {
+      grid-template-columns: 1fr;
+    }
+  }

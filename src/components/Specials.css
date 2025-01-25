@@ -1,0 +1,81 @@
+.specials {
+  padding: 4rem 5%;
+  background: #f5f5f5;
+}
+
+.specials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+}
+
+.online-menu-button:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.online-menu-button {
+  background: #495e57;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.specials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.special-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card-image {
+  height: 200px; /* Adjust height as needed */
+  background-size: cover; /* Ensures the image covers the div */
+  background-position: center; /* Centers the image */
+  border-top-left-radius: 16px; /* Match the card's border radius */
+  border-top-right-radius: 16px;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.price {
+  color: #495e57;
+  font-weight: bold;
+}
+
+.order-button {
+  background: none;
+  border: none;
+  color: #495e57;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.order-button:hover {
+  text-decoration: underline;
+}

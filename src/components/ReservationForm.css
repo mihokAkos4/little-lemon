@@ -1,0 +1,42 @@
+
+.reservation-form {
+    padding: 4rem 5%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  input, select {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+
+  .submit-button {
+    background: #495e57;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+  }
+
+  .submit-button:hover {
+    background: #3a4d46;
+  }
