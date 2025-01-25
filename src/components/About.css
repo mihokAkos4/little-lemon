@@ -1,103 +1,104 @@
-.about {
+/* LocationInfo.css */
+.location-section {
   padding: 4rem 2rem;
-  background-color: #ffffff;
+  background-color: #f8f8f8;
 }
 
-.about-content {
+.location-content {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  gap: 3rem;
-  justify-content: space-between;
+  gap: 4rem;
+  align-items: center;
 }
 
-.about-text {
+.location-text {
   flex: 1;
+  padding-right: 2rem;
 }
 
-.about-text h2 {
-  font-size: 2.5rem;
-  color: #F4CE14;
+.restaurant-name {
+  font-size: 2.8rem;
+  color: #333;
   margin-bottom: 0.5rem;
 }
 
-.about-text h3 {
-  font-size: 1.8rem;
-  color: #333;
-  margin-bottom: 2rem;
+.restaurant-location {
+  font-size: 1.5rem;
+  color: #F4CE14;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
 }
 
-.description-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+.restaurant-description {
   color: #666;
-  line-height: 1.6;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  max-width: 600px;
 }
 
-.about-images {
+.map-icon-container {
   flex: 1;
-  position: relative;
-  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.image-stack {
-  position: relative;
-  width: 100%;
-  min-height: 400px;
-}
-
-.image-bottom {
-  position: absolute;
-  width: 80%;
-  height: 80%;
-  right: 0;
-  bottom: 0;
+.map-icon {
+  width: 200px;
+  height: 200px;
   background-color: #F4CE14;
-  border-radius: 16px;
-  z-index: 1;
-}
-
-.image-top {
-  position: absolute;
-  width: 80%;
-  height: 80%;
-  left: 0;
-  top: 0;
-  background-size: cover;
-  background-position: center;
-  border-radius: 16px;
-  z-index: 2;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(244, 206, 20, 0.3);
 }
 
-.image-top:hover {
-  transform: translateY(-5px);
+.map-icon svg {
+  width: 100px;
+  height: 100px;
+  fill: #ffffff;
 }
 
-/* Add your actual image paths here */
-.image-top {
-  background-image: url('path-to-your-top-image.jpg');
-}
-
-.image-bottom {
-  background-image: url('path-to-your-bottom-image.jpg');
-  opacity: 0.9;
-  border: 4px solid #F4CE14;
+.map-icon:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
-  .about-content {
+  .location-content {
     flex-direction: column;
+    gap: 2rem;
   }
 
-  .description-columns {
-    grid-template-columns: 1fr;
+  .location-text {
+    padding-right: 0;
+    text-align: center;
   }
 
-  .about-images {
+  .restaurant-description {
     max-width: 100%;
-    min-height: 300px;
+  }
+
+  .map-icon {
+    width: 150px;
+    height: 150px;
+  }
+
+  .map-icon svg {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .restaurant-name {
+    font-size: 2.2rem;
+  }
+
+  .restaurant-location {
+    font-size: 1.2rem;
   }
 }
