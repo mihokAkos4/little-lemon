@@ -1,0 +1,57 @@
+/* Your CSS styles here */
+/* Chatbot Container */
+#bp-web-widget {
+    --bp-primary-color: #FFC107; /* Yellow primary */
+    --bp-background-color: #222; /* Dark background */
+    --bp-text-color: #fff; /* White text */
+    --bp-secondary-color: #FFA000; /* Slightly darker yellow */
+    --bp-border-radius: 12px;
+    --bp-font-family: "Poppins", sans-serif;
+}
+
+/* Chat Header */
+#bp-web-widget .bp-header {
+    background: var(--bp-primary-color);
+    color: #222;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Chat Bubbles */
+#bp-web-widget .bp-bubble.bp-bot {
+    background: var(--bp-primary-color);
+    color: #222;
+    font-weight: bold;
+}
+
+#bp-web-widget .bp-bubble.bp-user {
+    background: var(--bp-secondary-color);
+    color: #fff;
+}
+
+/* Chat Input */
+#bp-web-widget .bp-input-container {
+    background: #333;
+    border-top: 2px solid var(--bp-primary-color);
+}
+
+#bp-web-widget input {
+    background: #444;
+    color: #fff;
+    border: 1px solid var(--bp-primary-color);
+}
+
+/* Buttons */
+#bp-web-widget .bp-btn {
+    background: var(--bp-primary-color);
+    color: #222;
+    border-radius: 8px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+#bp-web-widget .bp-btn:hover {
+    background: var(--bp-secondary-color);
+    color: #fff;
+}

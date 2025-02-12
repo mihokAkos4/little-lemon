@@ -1,0 +1,18 @@
+window.botpress.init({
+  "botId": "f1e21002-9e36-43e0-9a2c-0c9f680019d1",
+  "configuration": {
+    "botName": "Assistance",
+    "website": {},
+    "email": {},
+    "phone": {},
+    "termsOfService": {},
+    "privacyPolicy": {},
+    "color": "#ffed00",
+    "variant": "solid",
+    "themeMode": "light",
+    "fontFamily": "inter",
+    "radius": 1,
+    "additionalStylesheetUrl": "https://files.bpcontent.cloud/2025/02/12/10/20250212104709-IBBNDUU0.css"
+  },
+  "clientId": "c3461c49-6cc4-4785-8842-ff2ec9291aa6"
+});
